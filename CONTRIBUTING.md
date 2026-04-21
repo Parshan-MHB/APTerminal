@@ -2,18 +2,26 @@
 
 ## Workflow
 
-1. Create a focused feature branch from `main`.
-2. Keep changes scoped to one concern.
-3. Regenerate the Xcode project when target or project settings change.
-4. Run the strongest local verification you can before opening a PR.
-5. Open a pull request into `main`.
-6. Merge only after required CI is green.
-7. Merge with squash merge so each PR lands as one commit on `main`.
+1. If you are an external contributor, work from a fork and open a pull request back to `main`.
+2. If you are a maintainer, create a focused feature branch from `main`.
+3. Keep changes scoped to one concern.
+4. Regenerate the Xcode project when target or project settings change.
+5. Run the strongest local verification you can before opening a PR.
+6. Open a pull request into `main`.
+7. Merge only after required CI is green.
+8. Merge with squash merge so each PR lands as one commit on `main`.
 
 Direct pushes to `main` are not part of this repo workflow. The `main` branch is protected and changes should land through pull requests, including maintainers' own changes.
 `main` also enforces linear history, so merge commits and rebase merges are not part of the repo workflow.
 
-Suggested branch naming:
+## Access Model
+
+- External contributors should use forks.
+- Maintainers should use feature branches in the main repository.
+- Do not grant write access to casual contributors. Without write access, GitHub already forces the fork-and-PR model in practice because contributors cannot create branches in the upstream repository.
+- Anyone with write, maintain, or admin access can still create branches in the main repository. GitHub does not provide a clean repository-level switch that says "contributors must fork, but maintainers may branch here." The practical control is repo permissions.
+
+Suggested branch naming for maintainer branches:
 
 - `feature/<short-topic>`
 - `fix/<short-topic>`
