@@ -2,10 +2,21 @@
 
 ## Workflow
 
-1. Fork the repo and create a focused branch.
+1. Create a focused feature branch from `main`.
 2. Keep changes scoped to one concern.
 3. Regenerate the Xcode project when target or project settings change.
 4. Run the strongest local verification you can before opening a PR.
+5. Open a pull request into `main`.
+6. Merge only after required CI is green.
+
+Direct pushes to `main` are not part of this repo workflow. The `main` branch is protected and changes should land through pull requests, including maintainers' own changes.
+
+Suggested branch naming:
+
+- `feature/<short-topic>`
+- `fix/<short-topic>`
+- `docs/<short-topic>`
+- `refactor/<short-topic>`
 
 ## Local Commands
 
@@ -32,9 +43,12 @@ Use `make build-ios` when you need an iOS build check and your machine has the r
 - note any security or protocol impact
 - include verification steps
 - include screenshots for UI changes when relevant
+- keep the PR focused enough to review cleanly
+- do not open a PR until the branch is in a state that can pass required CI
 
 ## Before Opening A PR
 
 - `make generate` if `project.yml` changed
 - `make test`
 - confirm the README and docs still match the implementation
+- confirm the branch is not `main`
