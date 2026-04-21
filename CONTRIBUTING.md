@@ -8,8 +8,10 @@
 4. Run the strongest local verification you can before opening a PR.
 5. Open a pull request into `main`.
 6. Merge only after required CI is green.
+7. Merge with squash merge so each PR lands as one commit on `main`.
 
 Direct pushes to `main` are not part of this repo workflow. The `main` branch is protected and changes should land through pull requests, including maintainers' own changes.
+`main` also enforces linear history, so merge commits and rebase merges are not part of the repo workflow.
 
 Suggested branch naming:
 
@@ -45,6 +47,7 @@ Use `make build-ios` when you need an iOS build check and your machine has the r
 - include screenshots for UI changes when relevant
 - keep the PR focused enough to review cleanly
 - do not open a PR until the branch is in a state that can pass required CI
+- expect the PR to land with squash merge, not merge commit or rebase merge
 
 ## Before Opening A PR
 
