@@ -6,6 +6,8 @@
 [![Swift](https://img.shields.io/badge/Swift-6.0-orange.svg)](https://www.swift.org/)
 [![Platforms](https://img.shields.io/badge/Platforms-iOS%2017%20%7C%20macOS%2014-blue.svg)](docs/technical-spec.md)
 
+https://github.com/user-attachments/assets/677d928c-bf23-4248-a61d-968aa0a5be91
+
 Secure, local-first terminal access from iPhone to Mac.
 
 APTerminal is a two-app system:
