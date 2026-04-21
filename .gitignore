@@ -1,0 +1,24 @@
+.DS_Store
+**/.DS_Store
+DerivedData/
+build/
+.build/
+dist/
+tmp/
+
+# Generated Xcode project
+APTerminal.xcodeproj/
+
+# SwiftPM local workspace state
+.swiftpm/
+
+# Local editor / tooling state
+.vscode/
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+
+# Local scratch / swap / logs
+*.swp
+*.log
